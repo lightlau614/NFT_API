@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Simple Transactional Email</title>
+        <style>
+            body {
+                background-color: #f6f6f6;
+                width: 100%; 
+                max-width: 800px;
+                margin: auto;
+            }
+
+            .center {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+
+            .backgound {
+                padding: 10px;
+                background-color: #7D75FE;
+                border-radius: 3px;
+                width: fit-content;
+            }
+
+            .backgound:hover{
+                cursor: pointer;
+            }
+
+            span{
+                color: #f6f6f6;
+            }
+
+            a{
+                text-decoration: none;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h3>Reset your password</h3>
+        <p>Follow this link to reset your account password at THEME. If you didn't request a new password, you can safely delete this email.<br></p>
+        <p>Token ID: ${ token } </p>
+        <a href="http://www.google.com">
+            <div class="center">
+                <div class="backgound">
+                    <span>Reset your password</span>
+                </div>
+            </div>
+        </a>
+        
+        <p>If you have any questions, reply to this email or contact us at info@theme.com</p>
+            
+    </body>
